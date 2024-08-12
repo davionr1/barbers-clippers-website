@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.welcome-container {
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: fadeInOut 1.5s ease-in-out forwards;
+    overflow: hidden;
+}
+
+
+.welcome-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scrollbar-width: none;
+
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    animation: fadeIn 1.5s ease-in forwards;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #3E3F5E;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+}
+
+.title {
+    font-size: 1.5em;
+    position: absolute;
+    left: 2%;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 0.5em;
+    margin: 0;
+    cursor: pointer;
+
+}
+
+ul {
+    padding: 0em;
+    padding-left: 3em;
+    padding-right: 3em;
+    display: flex;
+    position: relative;
+    left: 6%;
+    width: 22%;
+    margin: auto;
+    
+}
+
+.shop {
+    margin-left: 10em;
+    display: flex;
+    gap: 5em;
+    
+}
+
+.icons {
+    margin-left: 15%;
+    display: flex;
+    gap: 2em;
+
+}
+
+.home-background {
+    animation: fadeIn 1.5s ease-in forwards;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    right: 0%;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.current-page {
+    color: black;
+    font-size: 2.5em;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+
+}
+
+.show-moderator {
+    color: white;
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+}
+.link{
+    color:white
+}
+
+input{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+}
+input[type="text"]{
+    padding: 2px;
+    font-size: 13px;
+}
